@@ -1,0 +1,27 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background: #dae2f8 linear-gradient(90deg, #f7c9c9, #91a8d1)
+}
+
+#wrapper {
+    width: 660px;
+    margin: 0px auto;
+    background: #fff;
+    min-height: 100vh;
+}
+
+
+/* ul menu */
+
+ul#myPill>li a {
+    color: #797687;
+}
+
+ul#myPill>li a i {
+    font-size: 22px;
+}
+
+.nav-pills .nav-link.active {
+    color: #fff !important;
+}

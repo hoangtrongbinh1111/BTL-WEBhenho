@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS lib -->
+    <link rel="stylesheet" href="../Asset/css/reset.css">
+    <link rel="stylesheet" href="../Asset/css/global.css">
+    <link rel="stylesheet" href="../Asset/css/personal.css">
+    <!-- Font-Awesome lib -->
+    <link rel="stylesheet" href="../lib/Fontawesome/css/all.css">
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS + JS-->
+    <link rel="stylesheet" href="../lib/bootstrap-4.5.0-dist/css/bootstrap.css">
+    <script src="../lib/bootstrap-4.5.0-dist/js/jquery 3.5.0.js"></script>
+    <script src="../lib/bootstrap-4.5.0-dist/js/popper.min.js"></script>
+    <script src="../lib/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+    <!-- jQuery -->
+
+    <title>Personal</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <ul class="nav nav-pills nav-fill" id="myPill" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link" id="tab-half" data-toggle="tab" href="#content-half" role="tab" aria-controls="content-half" aria-selected="false">
+                    <div>
+                        <i class="fas fa-heart"></i>
+                        <p>Một nửa</p>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="tab-likeme" data-toggle="tab" href="#content-likeme" role="tab" aria-controls="content-likeme" aria-selected="false">
+                    <div>
+                        <i class="fas fa-thumbs-up"></i>
+                        <p>Ai thích tôi</p>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " id="tab-chat" data-toggle="tab" href="#content-chat" role="tab" aria-controls="content-chat" aria-selected="false">
+                    <div>
+                        <i class="fas fa-comments"></i>
+                        <p>Trò chuyện</p>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" id="tab-personal" data-toggle="tab" href="#content-personal" role="tab" aria-controls="content-personal" aria-selected="true">
+                    <div>
+                        <i class="fas fa-user-circle"></i>
+                        <p>Personal</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="myPillContent">
+            <div class="tab-pane fade" id="content-half" role="tabpanel" aria-labelledby="tab-half">
+                JavaScript is a cross-platform, object-oriented scripting language ...
+            </div>
+            <div class="tab-pane fade" id="content-likeme" role="tabpanel" aria-labelledby="tab-likeme">
+                CSS stands for Cascading Style Sheets. ...
+            </div>
+            <div class="tab-pane fade" id="content-chat" role="tabpanel" aria-labelledby="tab-chat">
+                Bootstrap is a free front-end framework for faster and easier web development...
+            </div>
+            <div class="tab-pane fade show active" id="content-personal" role="tabpanel" aria-labelledby="tab-personal">
+                Personal
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
