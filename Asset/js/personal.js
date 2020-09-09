@@ -13,10 +13,18 @@ $(document).ready(function() {
     $("sup#hide-age").click(function() {
         $("#myModal-info-hide-age").css("display", "block");
     });
+    // hihglight now
+    $("a.highlight-now").click(function() {
+        $("#myModal-highlight-now").css("display", "block");
+        return false;
+    });
+
     $(".modal-footer").click(function() {
         $("#myModal-info-hide-age").css("display", "none");
         $("#myModal-hide-age").css("display", "none");
+        $("#myModal-highlight-now").css("display", "none");
     });
+
 });
 $(document).ready(function() {
     $(window).scroll(function() {
