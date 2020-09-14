@@ -7,14 +7,14 @@
     <!-- CSS lib -->
     <link rel="stylesheet" href="Asset/css/reset.css">
     <link rel="stylesheet" href="Asset/css/global.css">
+    <link rel="stylesheet" href="Asset/css/header.css">
+    <link rel="stylesheet" href="Asset/css/footer.css">
     <link rel="stylesheet" href="Asset/css/style.css">
     <!-- Font-Awesome lib -->
     <link rel="stylesheet" href="lib/Fontawesome/css/all.css">
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.css">
     <link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.css">
-    <!-- jQuery -->
-    <script src="Asset/js/style.js"></script>
     <!-- <link rel="stylesheet" href="lib/jQuery/jquery 3.5.0.js"> -->
     <link rel="stylesheet" href="lib/owlcarousel/owl.carousel.js">
     <!-- Font Google -->
@@ -24,7 +24,8 @@
     <script src="lib/bootstrap-4.5.0-dist/js/jquery 3.5.0.js"></script>
     <script src="lib/bootstrap-4.5.0-dist/js/popper.min.js"></script>
     <script src="lib/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
-
+    <!-- jQuery -->
+    <script src="Asset/js/style.js"></script>
     <title>MTAhub</title>
 </head>
 
@@ -39,7 +40,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <nav class="navbar navbar-light navbar-expand-xl">
-                                        <a href="" class="navbar-brand">
+                                        <a href="index.html" class="navbar-brand">
                                             <img src="Asset/img/logo.png" alt="">
                                         </a>
                                         <button class="navbar-toggler" data-toggle="collapse" data-target="#main-nav">
@@ -47,8 +48,8 @@
                                                 </button>
                                         <div class="collapse navbar-collapse" id="main-nav">
                                             <ul class="navbar-nav mr-auto">
-                                                <li class="nav-item active">
-                                                    <a href="pages/branding.html" target="_blank" class="nav-link">Câu chuyện MTAhub</a>
+                                                <li class="nav-item">
+                                                    <a href="branding.html" class="nav-link">Câu chuyện MTAhub</a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a href="quizvui.html" class="nav-link">Quizz vui</a>
@@ -76,32 +77,39 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="row">
-                                    <div class="col-md-4 ">
-                                        <button class="btn btn-primary w-100 btn-login" id="login-by-fb">
-                                        <div class="d-flex" id="icon-fb">
-                                            <i class="fab fa-facebook-f"></i>
-                                            <span>Đăng nhập bằng facebook</span>
-                                        </div>
-                                    </button>
+                                    <div class="col-md-4">
+                                        <button class="login-btn d-flex" id="login-by-fb">
+                                            <div class="icon-bg fb-icon">
+                                                <img src="Asset/img/Facebook-white.png" alt="">
+                                            </div>
+                                            <div class="text-left txt-login">
+                                                <span>Đăng nhập bằng Facebook</span>
+                                            </div>
+                                        </button>
                                     </div>
                                     <div class="col-md-4 ">
-                                        <button class="btn btn-primary w-100 btn-login" id="login-by-google">
-                                        <div class="d-flex" id="icon-google">
-                                            <i class="fab fa-google"></i>
-                                            <span>Đăng nhập bằng google</span>
-                                        </div>
-                                    </button>
+                                        <button class="login-btn d-flex" id="login-by-google">
+                                            <div class=" icon-bg google-icon">
+                                                <img src="Asset/img/Google.png " alt=" ">
+                                            </div>
+                                            <div class="text-left txt-login ">
+                                                <span>Đăng nhập bằng Google</span>
+                                            </div>
+                                        </button>
                                     </div>
                                     <div class="col-md-4 ">
-                                        <button class="btn btn-primary w-100 btn-login" id="login-by-phone">
-                                        <div class="d-flex" id="icon-phone">
-                                            <i class="fas fa-mobile"></i>
-                                            <span>Đăng nhập bằng số điện thoại</span>
-                                        </div>
-                                    </button>
+                                        <a href="login.html">
+                                            <button class="login-btn d-flex " id="login-by-me">
+                                                <div class="icon-bg">
+                                                    <img src="Asset/img/phone.png" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="text-left txt-login text-info">
+                                                    <span>Đăng nhập bằng MTAhub</span>
+                                                </div>
+                                                </button>
+                                        </a>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -112,7 +120,6 @@
                 </div>
 
             </div>
-
         </div>
         <!-- CONTENT -->
         <div id="wp-content">
@@ -185,9 +192,29 @@
                 </ul>
                 <p>Developed by Bình + Hoàng CNTT1</p>
             </div>
+            <div id="wrap_chat_min">
+                <p class="chat">CSKH MTAHUB</p>
+            </div>
+            <div id="wrap_chat_max">
+                <div class="header_chat">
+                    <p>CSKH MTAHUB</p>
+                    <i class="fa fa-times" id="bt_close" aria-hidden="true"></i>
+                    <p style="text-align: center;">Bạn vui lòng điền vào biểu mẫu dưới đây để nói chuyện với nhân viên đang trực tiếp theo</p>
+                </div>
+                <div class="content_chat">
+                    <form action="" class="form-group mt-5 mb-0">
+                        <input type="text" name="name" maxlength="40" placeholder="Tên" class="form-control"><br>
+                        <input type="email" name="email" placeholder="Email" class="form-control"><br>
+                        <input type="text" name="phone" placeholder="Điện thoại" class="form-control"><br>
+                        <input type="submit" name="btn_chat" value="Bắt đầu trò chuyện" class="form-control" id="btn_chat">
+                    </form>
+                </div>
+                <div class="footer_chat text-center">
+                    <p>We are MTAhub</p>
+                </div>
+            </div>
         </div>
         <!-- END FOOTER -->
-    </div>
     </div>
     <!-- END HEADER -->
     <!-- CONTENT -->

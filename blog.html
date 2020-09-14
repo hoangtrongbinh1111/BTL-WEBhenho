@@ -7,7 +7,8 @@
     <!-- CSS lib -->
     <link rel="stylesheet" href="Asset/css/reset.css">
     <link rel="stylesheet" href="Asset/css/global.css">
-    <link rel="stylesheet" href="Asset/css/style.css">
+    <link rel="stylesheet" href="Asset/css/header.css">
+    <link rel="stylesheet" href="Asset/css/footer.css">
     <link rel="stylesheet" href="Asset/css/blog.css">
     <!-- Font-Awesome lib -->
     <link rel="stylesheet" href="lib/Fontawesome/css/all.css">
@@ -41,7 +42,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <nav class="navbar navbar-light navbar-expand-xl">
-                                        <a href="" class="navbar-brand">
+                                        <a href="index.html" class="navbar-brand">
                                             <img src="Asset/img/logo.png" alt="">
                                         </a>
                                         <button class="navbar-toggler" data-toggle="collapse" data-target="#main-nav">
@@ -50,7 +51,7 @@
                                         <div class="collapse navbar-collapse" id="main-nav">
                                             <ul class="navbar-nav mr-auto">
                                                 <li class="nav-item">
-                                                    <a href="pages/branding.html" target="_blank" class="nav-link">Câu chuyện MTAhub</a>
+                                                    <a href="branding.html" class="nav-link">Câu chuyện MTAhub</a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a href="quizvui.html" class="nav-link ">Quizz vui</a>
@@ -78,24 +79,38 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="row">
-                                    <div class="col-md-2"></div>
                                     <div class="col-md-4">
-                                        <button class="btn btn-primary w-100 btn-login" id="login-by-fb">
-                                        <div class="d-flex" id="icon-fb">
-                                            <i class="fab fa-facebook-f"></i>
-                                            <span>Đăng nhập bằng facebook</span>
-                                        </div>
-                                    </button>
+                                        <button class="login-btn d-flex" id="login-by-fb">
+                                            <div class="icon-bg fb-icon">
+                                                <img src="Asset/img/Facebook-white.png" alt="">
+                                            </div>
+                                            <div class="text-left txt-login">
+                                                <span>Đăng nhập bằng Facebook</span>
+                                            </div>
+                                        </button>
                                     </div>
                                     <div class="col-md-4 ">
-                                        <button class="btn btn-primary w-100 btn-login" id="login-by-google">
-                                        <div class="d-flex" id="icon-google">
-                                            <i class="fab fa-google"></i>
-                                            <span>Đăng nhập bằng google</span>
-                                        </div>
-                                    </button>
+                                        <button class="login-btn d-flex" id="login-by-google">
+                                            <div class=" icon-bg google-icon">
+                                                <img src="Asset/img/Google.png " alt=" ">
+                                            </div>
+                                            <div class="text-left txt-login ">
+                                                <span>Đăng nhập bằng Google</span>
+                                            </div>
+                                        </button>
                                     </div>
-                                    <div class="col-md-2"></div>
+                                    <div class="col-md-4 ">
+                                        <a href="login.html">
+                                            <button class="login-btn d-flex " id="login-by-me">
+                                                <div class="icon-bg">
+                                                    <img src="Asset/img/phone.png" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="text-left txt-login text-info">
+                                                    <span>Đăng nhập bằng MTAhub</span>
+                                                </div>
+                                                </button>
+                                        </a>
+                                    </div>
                                 </div>
 
                             </div>
@@ -474,8 +489,6 @@
         <!-- END FOOTER -->
     </div>
     <a id="back-to-top" href="#" class="btn btn-danger btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
-    </div>
-    </div>
     <!-- END HEADER -->
     <!-- CONTENT -->
 
